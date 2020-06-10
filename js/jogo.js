@@ -19,5 +19,5 @@ function addBola (){
     }
     }
    function iniciar (){
-    setInterval(addBola, 1000);
+    setInterval(addBola, 3000);
    }
