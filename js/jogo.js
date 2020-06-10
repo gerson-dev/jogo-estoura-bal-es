@@ -10,14 +10,28 @@ function addBola (){
    }
    function estourar(elemento) {
     document.body.removeChild(elemento);
+
     var p = parseInt(document.getElementById("pontos").innerHTML);
     p = p +1;
     document.getElementById("pontos").innerHTML = p;
     if (p > 100) {
-     alert ("PARABÉNS VOÇÊ GANHOU PIETRO E THOMAS");
+     alert ("PARABÉNS VOÇÊ GANHOU PAMELA, SAFIRA, SAULO-FILHO");
      window.location.href = window.location.href;
     }
     }
+
+    // let atualizar = window.location.reload();
+
    function iniciar (){
-    setInterval(addBola, 3000);
+       setInterval(addBola, 1000);
    }
+
+  
+   function dificuldade2(){
+        window.location.reload();
+        setInterval(addBola, 1000);
+    }
+
+    function dificuldade3(){
+        setInterval(addBola, 500);
+    }

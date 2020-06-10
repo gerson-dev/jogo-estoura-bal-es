@@ -1,16 +1,26 @@
 <!DOCTYPE html>
-<html>
- </head>
-  <title>Java Script Basico</title>
-  <link rel="stylesheet" href="css/style.css">  
- <head>
- <body onload="iniciar()">
- <h3>Jogo de Estourar Balões!!!</h3>
- <div>Pontos:</div>
- <div id="pontos">0</div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Java Script Basico</title>
+    <title>Document</title>
+</head>
+
+<body onload="iniciar()">
+    <h3>Jogo de Estourar Balões!!!</h3>
+    <div class="pontos">Pontos:</div>
+    <div id="pontos">0</div>
+
+    <div class="botoes-dificuldade">
+        <button onload="dificuldade1()">Normal</button>
+        <button onload="dificuldade2()">rápido</button>
+        <button onload="dificuldade3()">Super rapido</button>
+    </div>
 
 
 
- <script src="js/jogo.js"></script>
- </body>
- </html> 
+<script src="js/jogo.js"></script>
+</body>
+</html>
